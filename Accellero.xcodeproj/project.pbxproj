@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE7835CE1FC45FED0050DC48 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE7835CC1FC45FED0050DC48 /* Starscream.framework */; };
+		DE7835CF1FC45FED0050DC48 /* SocketIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE7835CD1FC45FED0050DC48 /* SocketIO.framework */; };
+		DE7835DB1FC469690050DC48 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE7835DA1FC469690050DC48 /* Images.xcassets */; };
+		DE9578161FBDD81800F6A500 /* SocketIOManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9578151FBDD81800F6A500 /* SocketIOManager.swift */; };
+		DE9578181FBDDBDA00F6A500 /* MotionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9578171FBDDBDA00F6A500 /* MotionHelper.swift */; };
 		DE9BA1201FBDD19900F149D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9BA11F1FBDD19900F149D5 /* AppDelegate.swift */; };
 		DE9BA1221FBDD19900F149D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9BA1211FBDD19900F149D5 /* ViewController.swift */; };
 		DE9BA1251FBDD19900F149D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE9BA1231FBDD19900F149D5 /* Main.storyboard */; };
-		DE9BA1271FBDD19900F149D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE9BA1261FBDD19900F149D5 /* Assets.xcassets */; };
 		DE9BA12A1FBDD19900F149D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE9BA1281FBDD19900F149D5 /* LaunchScreen.storyboard */; };
 		DE9BA1351FBDD19900F149D5 /* AccelleroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9BA1341FBDD19900F149D5 /* AccelleroTests.swift */; };
 /* End PBXBuildFile section */
@@ -26,11 +30,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DE7835CC1FC45FED0050DC48 /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Framework/Carthage/Build/iOS/Starscream.framework; sourceTree = "<group>"; };
+		DE7835CD1FC45FED0050DC48 /* SocketIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SocketIO.framework; path = Framework/Carthage/Build/iOS/SocketIO.framework; sourceTree = "<group>"; };
+		DE7835DA1FC469690050DC48 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DE9578151FBDD81800F6A500 /* SocketIOManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketIOManager.swift; sourceTree = "<group>"; };
+		DE9578171FBDDBDA00F6A500 /* MotionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionHelper.swift; sourceTree = "<group>"; };
 		DE9BA11C1FBDD19900F149D5 /* Accellero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Accellero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE9BA11F1FBDD19900F149D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE9BA1211FBDD19900F149D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DE9BA1241FBDD19900F149D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DE9BA1261FBDD19900F149D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE9BA1291FBDD19900F149D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE9BA12B1FBDD19900F149D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE9BA1301FBDD19900F149D5 /* AccelleroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AccelleroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE7835CE1FC45FED0050DC48 /* Starscream.framework in Frameworks */,
+				DE7835CF1FC45FED0050DC48 /* SocketIO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +72,7 @@
 				DE9BA11E1FBDD19900F149D5 /* Accellero */,
 				DE9BA1331FBDD19900F149D5 /* AccelleroTests */,
 				DE9BA11D1FBDD19900F149D5 /* Products */,
+				DE9BA1551FBDD5A300F149D5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,9 +91,11 @@
 				DE9BA11F1FBDD19900F149D5 /* AppDelegate.swift */,
 				DE9BA1211FBDD19900F149D5 /* ViewController.swift */,
 				DE9BA1231FBDD19900F149D5 /* Main.storyboard */,
-				DE9BA1261FBDD19900F149D5 /* Assets.xcassets */,
 				DE9BA1281FBDD19900F149D5 /* LaunchScreen.storyboard */,
 				DE9BA12B1FBDD19900F149D5 /* Info.plist */,
+				DE9578151FBDD81800F6A500 /* SocketIOManager.swift */,
+				DE9578171FBDDBDA00F6A500 /* MotionHelper.swift */,
+				DE7835DA1FC469690050DC48 /* Images.xcassets */,
 			);
 			path = Accellero;
 			sourceTree = "<group>";
@@ -94,6 +107,15 @@
 				DE9BA1361FBDD19900F149D5 /* Info.plist */,
 			);
 			path = AccelleroTests;
+			sourceTree = "<group>";
+		};
+		DE9BA1551FBDD5A300F149D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE7835CD1FC45FED0050DC48 /* SocketIO.framework */,
+				DE7835CC1FC45FED0050DC48 /* Starscream.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,8 +201,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE7835DB1FC469690050DC48 /* Images.xcassets in Resources */,
 				DE9BA12A1FBDD19900F149D5 /* LaunchScreen.storyboard in Resources */,
-				DE9BA1271FBDD19900F149D5 /* Assets.xcassets in Resources */,
 				DE9BA1251FBDD19900F149D5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,6 +222,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE9BA1221FBDD19900F149D5 /* ViewController.swift in Sources */,
+				DE9578161FBDD81800F6A500 /* SocketIOManager.swift in Sources */,
+				DE9578181FBDDBDA00F6A500 /* MotionHelper.swift in Sources */,
 				DE9BA1201FBDD19900F149D5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,10 +377,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q5VXV8DFPV;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Users/anthonygriffon/Desktop/Framework/Carthage/Build/iOS,
+					"$(PROJECT_DIR)/Framework/Carthage/Build/iOS",
+					/Users/anthonygriffon/Documents/DU/Accellero/Framework/Carthage/Build,
+				);
 				INFOPLIST_FILE = Accellero/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks /Users/anthonygriffon/Documents/DU/Accellero/Framework/Carthage/Build/iOS/";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dudessiin.Accellero;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -368,10 +398,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q5VXV8DFPV;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Users/anthonygriffon/Desktop/Framework/Carthage/Build/iOS,
+					"$(PROJECT_DIR)/Framework/Carthage/Build/iOS",
+					/Users/anthonygriffon/Documents/DU/Accellero/Framework/Carthage/Build,
+				);
 				INFOPLIST_FILE = Accellero/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks /Users/anthonygriffon/Documents/DU/Accellero/Framework/Carthage/Build/iOS/";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dudessiin.Accellero;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
